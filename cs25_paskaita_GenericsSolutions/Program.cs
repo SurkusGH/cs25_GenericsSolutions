@@ -1,4 +1,5 @@
-﻿using System;
+﻿using cs25_paskaita_GenericsSolutions.Solutions;
+using System;
 
 namespace cs25_paskaita_GenericsSolutions
 {
@@ -14,6 +15,8 @@ namespace cs25_paskaita_GenericsSolutions
             Solution_02();
             Console.WriteLine();
 
+            Solution_03();
+            Console.WriteLine();
         }
 
         public static void Solution_01()
@@ -36,6 +39,18 @@ namespace cs25_paskaita_GenericsSolutions
             // Tada susikuriu generatoriuką, kuriam paduosiu stringą arg:
             var generator = new Generator();
             generator.Show(solution2);
+        }
+        public static void Solution_03()
+        {
+            var solution3a = new Solution_03<int>(10, 5);
+            solution3a.ValueAddition();
+            var solution3b = new Solution_03<float>(10f, 5f);
+            solution3b.ValueSubstraction();
+            var solution3c = new Solution_03<double>(10d, 5d);
+            solution3c.ValueMultiplication();
+            var solution3d = new Solution_03<decimal>(10m, 5m);
+            solution3d.ValueSubstraction();
+
         }
     }
 }
