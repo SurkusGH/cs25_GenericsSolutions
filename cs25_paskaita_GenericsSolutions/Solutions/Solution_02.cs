@@ -38,10 +38,10 @@ namespace cs25_paskaita_GenericsSolutions
             return $"Objekto {Name}, pagrindas yra {Base}, o aukštis {Height}.";
         }
     }
-    public class Generator<T>
+    public class Generator
     {
         // Tada sukurti Generator<T> klasę turinčią metodą Show, kuris atspausdins perduoto objekto ToString() grąžintą reikšmę.
-        public void Show(T printME)
+        public void Show<T>(T printME)
         {
             Console.WriteLine(printME);
         }

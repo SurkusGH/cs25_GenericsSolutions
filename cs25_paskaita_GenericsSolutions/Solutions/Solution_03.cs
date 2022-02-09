@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace cs25_paskaita_GenericsSolutions.Solutions
 {
-    internal class Solution_03
+    public class Solution_03
     {
+
+        // Sukurkite klasę Calculator, kuri priims
     }
 }
