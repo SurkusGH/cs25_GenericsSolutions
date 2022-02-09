@@ -17,6 +17,9 @@ namespace cs25_paskaita_GenericsSolutions
 
             Solution_03();
             Console.WriteLine();
+
+            Solution_04();
+            Console.WriteLine();
         }
 
         public static void Solution_01()
@@ -54,6 +57,10 @@ namespace cs25_paskaita_GenericsSolutions
             var solution3d = new Solution_03<decimal>(10m, 5m);
             solution3d.ValueSubstraction();
 
+        }
+        public static void Solution_04()
+        {
+            Console.WriteLine("Solution_04");
         }
     }
 }
