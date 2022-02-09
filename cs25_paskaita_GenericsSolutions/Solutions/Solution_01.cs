@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace cs25_paskaita_GenericsSolutions
 {
-    public class Solution_1<T, F>
+    public class Solution_01<T, F>
     {
         // Generics parametrų galima naudoti daugiau negu vieną pvz Method<T1, T2>
         // Sukurkite klasę kuri priima du generic tipo parametrus.
@@ -15,13 +15,13 @@ namespace cs25_paskaita_GenericsSolutions
         public T ValueT { get; set; }
         public F ValueF { get; set; }
 
-        public Solution_1(T valueT, F valueF)
+        public Solution_01(T valueT, F valueF)
         {
             ValueT = valueT;
             ValueF = valueF;
         }
 
-        public Solution_1()
+        public Solution_01()
         {
         }
 
@@ -32,12 +32,12 @@ namespace cs25_paskaita_GenericsSolutions
         //    Console.WriteLine($"Pirmasis kintamasis: {input1}, jo tipas yra {input1.GetType()} tipo");
         //    Console.WriteLine($"Antrasis kintamasis: {input2}, jo tipas yra {input2.GetType()} tipo");
         //}
-        public void PrintTandF(T input1, F input2)
+        public void PrintTandF(T input1, F input2) // <-- Sekančio metodo užduotyje, kaip ir nebuvo... arba šito metodo nebuvo.
         {
             Console.WriteLine($"Pirmasis kintamasis: {input1}, jis yra {input1.GetType()} tipo");
             Console.WriteLine($"Antrasis kintamasis: {input2}, jis yra {input2.GetType()} tipo");
         }
-        public void PrintTandF()
+        public void PrintTandF() // ^-- Ankstesnis metodas atlieka iš esmės visas tris žemesnes funkcijas vienas. Idk.
         {
             Console.WriteLine($"Pirmasis kintamasis: {ValueT}, jis yra {ValueT.GetType()} tipo");
             Console.WriteLine($"Antrasis kintamasis: {ValueF}, jis yra {ValueF.GetType()} tipo");
