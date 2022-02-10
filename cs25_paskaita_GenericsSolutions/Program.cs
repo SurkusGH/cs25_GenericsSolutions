@@ -1,5 +1,7 @@
 ﻿using cs25_paskaita_GenericsSolutions.Solutions;
+using cs25_paskaita_GenericsSolutions.Soulutions_cs26;
 using System;
+using System.Collections.Generic;
 
 namespace cs25_paskaita_GenericsSolutions
 {
@@ -20,8 +22,19 @@ namespace cs25_paskaita_GenericsSolutions
 
             Solution_04();
             Console.WriteLine();
-        }
 
+            // Solutions_cs26
+
+            Solution_05();
+            Console.WriteLine();
+
+            Solution_06();
+            Console.WriteLine();
+
+            Solution_07();
+            Console.WriteLine();
+        }
+        #region Solutions_cs25
         public static void Solution_01()
         {
             Console.WriteLine("Solution_01");
@@ -35,7 +48,6 @@ namespace cs25_paskaita_GenericsSolutions
 
             solution.PrintTandF();
         }
-
         public static void Solution_02()
         {
             Console.WriteLine("Solution_02");
@@ -62,6 +74,49 @@ namespace cs25_paskaita_GenericsSolutions
         {
             Console.WriteLine("Solution_04");
         }
+        #endregion
+
+        #region Solutions_cs26
+        public static void Solution_05()
+        {
+            Console.WriteLine("Solution_05");
+            var list = new List<string>();
+            list.Add("Aš");
+            list.Add("Aš");
+            list.Add("Tu");
+            list.Add("Mes");
+            list.Add("Jie");
+            var solution5 = new Solution_05<string>(list);
+            solution5.PrintMyList();
+
+            solution5.ConvertListToArray();
+
+            solution5.FindInstanceInAList("Tu");
+            solution5.FindInstanceInAList("Jos");
+            solution5.FindInstanceInAList("Aš");
+
+            solution5.FindInstanceInAListTurbo("Tu");
+            solution5.FindInstanceInAListTurbo("Jos");
+            solution5.FindInstanceInAListTurbo("Aš");
+
+            solution5.CheckType(1f);
+            solution5.CheckType(1d);
+            solution5.CheckType("String");
+
+
+        }
+
+        public static void Solution_06()
+        {
+            Console.WriteLine("Solution_05");
+        }
+
+        public static void Solution_07()
+        {
+            Console.WriteLine("Solution_05");
+        }
+
+        #endregion
     }
 }
 
