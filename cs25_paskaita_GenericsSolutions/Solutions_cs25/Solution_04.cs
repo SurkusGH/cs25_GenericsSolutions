@@ -31,13 +31,13 @@ namespace cs25_paskaita_GenericsSolutions.Solutions
         // Only teams of the same type should be added to any particular
         // instance of the league class - the program should fail to compile
         // if an attempt is made to add an incompatible team.
-        public bool AddTeamTypeA(T Team)
-        {
-            if (Team.Contains("TypeA"))
-            {
-                TeamList.Add(Team);
-            }
-        }
+        //public bool AddTeamTypeA(T Team)
+        //{
+        //    if (Team.Contains("TypeA"))
+        //    {
+        //        TeamList.Add(Team);
+        //    }
+        //}
     }
 
     public class TeamTypeA
