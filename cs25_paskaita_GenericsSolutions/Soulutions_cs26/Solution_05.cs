@@ -13,7 +13,7 @@ namespace cs25_paskaita_GenericsSolutions.Soulutions_cs26
         // ir jų keisti nebegalima). Sąrašas reikšmių inicializuoti sąrašui turi ateiti per konstruktorių.
         public List<T> List { get;  private set; }
 
-        //public ReadOnlyCollection<T> ReadOnlyList => List.AsReadOnly();
+        //public ReadOnlyCollection<T> ReadOnlyList => List.AsReadOnly(); // <-- ?
 
         public Solution_05(List<T> list)
         {
@@ -124,9 +124,10 @@ namespace cs25_paskaita_GenericsSolutions.Soulutions_cs26
             }
             else
             {
-                check=false;
+                check = false;
                 Console.WriteLine($"Input type is not the same as List type");
                 Console.WriteLine($"Returning bool value = {check}");
+                Console.WriteLine();
             }
             return check;
         }

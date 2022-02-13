@@ -11,6 +11,8 @@ namespace cs25_paskaita_GenericsSolutions
         {
             Console.WriteLine("cs25_PASKAITA_GenericsSolutions!");
 
+            // Solutions_cs25
+
             Solution_01();
             Console.WriteLine();
 
@@ -87,6 +89,7 @@ namespace cs25_paskaita_GenericsSolutions
             list.Add("Mes");
             list.Add("Jie");
             var solution5 = new Solution_05<string>(list);
+
             solution5.PrintMyList();
 
             solution5.ConvertListToArray();
@@ -103,12 +106,37 @@ namespace cs25_paskaita_GenericsSolutions
             solution5.CheckType(1d);
             solution5.CheckType("String");
 
-
         }
 
         public static void Solution_06()
         {
             Console.WriteLine("Solution_05");
+            var list = new List<int>();
+            var solution_06 = new Solution_06<int>(list);
+
+            solution_06.AddToList(2);
+            solution_06.AddToList(5);
+            solution_06.AddToList(2);
+            solution_06.AddToList(3);
+            solution_06.PrintList();
+
+            var list2 = new List<int>();
+            list2.Add(1);
+            list2.Add(2);
+            list2.Add(3);
+            solution_06.AddGroupToList(list2);
+            solution_06.PrintList();
+
+            solution_06.RemoveAllElementsByValue(5);
+            solution_06.PrintList();
+
+            solution_06.RemoveElementByIndex(2);
+            solution_06.PrintList();
+
+            solution_06.RemoveAllElementsByValue(2);
+            solution_06.PrintList();
+
+            solution_06.ConvertToArray();
         }
 
         public static void Solution_07()
