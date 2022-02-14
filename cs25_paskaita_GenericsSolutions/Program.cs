@@ -110,7 +110,7 @@ namespace cs25_paskaita_GenericsSolutions
 
         public static void Solution_06()
         {
-            Console.WriteLine("Solution_05");
+            Console.WriteLine("Solution_06");
             var list = new List<int>();
             var solution_06 = new Solution_06<int>(list);
 
@@ -141,7 +141,7 @@ namespace cs25_paskaita_GenericsSolutions
 
         public static void Solution_07()
         {
-            Console.WriteLine("Solution_05");
+            Console.WriteLine("Solution_07");
         }
 
         #endregion

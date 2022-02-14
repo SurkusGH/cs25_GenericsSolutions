@@ -54,6 +54,7 @@ namespace cs25_paskaita_GenericsSolutions.Soulutions_cs26
         // Jeigu rado daugiau ar mažiau negu vieną turi mesti mesti klaidą;
         public dynamic FindInstanceInAList(dynamic instanceInList)
         {
+            Solution_07.CheckIFInputIsNull(instanceInList);
             int counter = 0;
             foreach (var item in List)
             {
@@ -87,6 +88,7 @@ namespace cs25_paskaita_GenericsSolutions.Soulutions_cs26
 
         public dynamic FindInstanceInAListTurbo(dynamic instanceInList)
         {
+            Solution_07.CheckIFInputIsNull(instanceInList);
             int counter = 0;
             foreach (var item in List)
             {
@@ -114,6 +116,7 @@ namespace cs25_paskaita_GenericsSolutions.Soulutions_cs26
         // Funkcija kuri patikrina ar egzistuoja nurodytos reikšmės kintamasis sąraše ir grąžina bool tipo reikšmę atitinkančią paieškos rezultatą;
         public bool CheckType(dynamic instance)
         {
+            Solution_07.CheckIFInputIsNull(instance);
             bool check;
             if (List[0].GetType() == instance.GetType())
             {

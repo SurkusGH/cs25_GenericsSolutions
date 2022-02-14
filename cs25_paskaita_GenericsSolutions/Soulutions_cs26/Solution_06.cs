@@ -38,12 +38,14 @@ namespace cs25_paskaita_GenericsSolutions.Soulutions_cs26
         // Funkcija, kuri prideda narį į sąrašą;
         public void AddToList(Type nameOfVariable)
         {
+            Solution_07.CheckIFInputIsNull(nameOfVariable);
             List.Add(nameOfVariable);
         }
 
         // Funkcija, kuri prideda sąrašą narių į sąrašą;
         public void AddGroupToList(List<Type> nameOfList)
         {
+            Solution_07.CheckIFInputIsNull(nameOfList);
             foreach (var item in nameOfList)
             {
                 List.Add(item);
@@ -53,6 +55,7 @@ namespace cs25_paskaita_GenericsSolutions.Soulutions_cs26
         // Funkcija, kuri ištrina elementą sąraše;
         public void RemoveElement(dynamic nameOfElement)
         {
+            Solution_07.CheckIFInputIsNull(nameOfElement);
             foreach (var item in List)
             {
                 if (item == nameOfElement)
@@ -65,12 +68,14 @@ namespace cs25_paskaita_GenericsSolutions.Soulutions_cs26
         // Funkcija, kuri ištrina elementą sąraše pagal indeksą;
         public void RemoveElementByIndex(int index)
         {
+            Solution_07.CheckIFInputIsNull(index);
             List.RemoveAt(index);
         }
 
         // Funkcija, kuri ištrina visus atitinkamus elementus sąraše(pvz.: ištrina visus dvejetus);
         public void RemoveAllElementsByValue(dynamic value)
         {
+            Solution_07.CheckIFInputIsNull(value);
             List.RemoveAll(item => item == value);
         }
     }
