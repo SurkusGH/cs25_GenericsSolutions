@@ -39,8 +39,8 @@ namespace cs25_paskaita_GenericsSolutions.Soulutions_cs26
         public Array ConvertListToArray()
         {
             var array = new T[List.Count];
-            List.ToArray(); // <-- įdomu, o tai kam aš ją čia rašau. Ir jeigu čia man jinai nereikalinga, tai kokia šito ToArray() funkcija?
-            List.CopyTo(array, 0);
+            List.ToArray(); 
+            //List.CopyTo(array, 0);
 
             for (int i = 0; i < array.Length; i++)
             {

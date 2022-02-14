@@ -32,7 +32,7 @@ namespace cs25_paskaita_GenericsSolutions.Soulutions_cs26
             List.CopyTo(array, 0);
 
             Console.WriteLine(array.GetType());
-            return array.GetType();
+            return array;
         }
 
         // Funkcija, kuri prideda narį į sąrašą;
@@ -46,23 +46,25 @@ namespace cs25_paskaita_GenericsSolutions.Soulutions_cs26
         public void AddGroupToList(List<Type> nameOfList)
         {
             Solution_07.CheckIFInputIsNull(nameOfList);
-            foreach (var item in nameOfList)
-            {
-                List.Add(item);
-            }
+            //foreach (var item in nameOfList)
+            //{
+            //    List.Add(item);
+            //}
+            List.AddRange(nameOfList);
         }
 
         // Funkcija, kuri ištrina elementą sąraše;
-        public void RemoveElement(dynamic nameOfElement)
+        public void RemoveElement(dynamic elelemt)
         {
-            Solution_07.CheckIFInputIsNull(nameOfElement);
+            Solution_07.CheckIFInputIsNull(elelemt);
             foreach (var item in List)
             {
-                if (item == nameOfElement)
+                if (item == elelemt)
                 {
                     List.Remove(item);
                 }
             }
+            List.Remove(elelemt);
         }
 
         // Funkcija, kuri ištrina elementą sąraše pagal indeksą;
